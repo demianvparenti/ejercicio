@@ -1,0 +1,55 @@
+.jumbotron{
+    background-color: #fdbbf8;
+    text-align: center;
+}
+
+.form-select{
+    color: black;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.form-select:focus{
+    outline: none;
+    border: 1px solid #88c6df;
+    box-shadow: 0 0 10px #88c6df;
+}
+
+.bd-footer{
+    background-color: #fdbbf8;
+    padding: 20px;
+    text-align: center;
+    color: black;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.btn{
+    background-color: #fdbbf8;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #ff96f6;
+    color: black;
+}
+
+.btn:active{
+    background-color: #ff96f6;
+    color: black;
+    border-color: #ff96f6;
+}
+
+#errorName, #errorSurname, #errorMail, #errorDOB, #errorCountry{
+    color: red;
+    margin-top: 5px;
+}

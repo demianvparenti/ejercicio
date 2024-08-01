@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulario con Bootstrap</title>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        rel="stylesheet">
+        <link rel="stylesheet" href="style1.css" id="style-link">
+    </head>
+    <body>
+        <div class="container mt-5">
+            <!-- Encabezado principal -->
+            <div class="jumbotron">
+                <h1 class="display-4"><b>Formulario</b></h1>
+            </div>
+            <!-- Formulario -->
+            <form class="myForm" autocomplete="on">
+                <div class="my-3">
+                    <div class="row align-items-center">
+                        <div class="col-6">
+                            <div class="form-floating">
+                                <input type="name" class="form-control" id="name" placeholder="Su nombre..." alt="Nombre" required autofocus>
+                                <div id="errorName" class="form-text"></div>
+                              </div>
+                        </div>
+                        <div class="col-6">
+                              <div class="form-floating">
+                                <input type="surname" class="form-control" id="surname" placeholder="Su apellido..." alt="Apellido" required>
+                                <div id="errorSurname" class="form-text"></div>
+                              </div>
+                        </div>
+                        <div class="col-12 mt-3">
+                            <input type="email" class="form-control" id="email" placeholder="email@ejemplo.com" alt="e-mail" required>
+                            <div id="errorMail" class="form-text"></div>
+                        </div>
+                        <div class="col-12 mt-3">
+                            <input type="dob" class="form-control" id="dob" placeholder="AAAA-MM-DD" alt="fecha de nacimiento" required>
+                            <div id="errorDOB" class="form-text"></div>
+                        </div>
+                        <div class="col-12 my-3">
+                            <select class="form-select form-select-lg p-2" id="country" placeholder="País de residencia" alt="País de residencia" required>
+                                <option selected hidden value="">País de residencia</option>
+                                <option value="Argentina" alt="Argentina">Argentina</option>
+                                <option value="Chile" alt="Chile">Chile</option>
+                                <option value="Paraguay" alt="Paraguay">Paraguay</option>
+                                <option value="Uruguay" alt="Uruguay">Uruguay</option>
+                            </select>
+                            <div id="errorCountry" class="form-text"></div>
+                        </div>
+                        <div id="successMessage" class="alert alert-success mx-3" role="alert" style="display:none; color:green;"></div>
+                    </div>
+                <button type="submit" class="btn mb-3" onclick="checkForm(event)">Enviar</button>
+                </div>
+            </form>
+            <!-- Botones -->
+            <div class="my-3">
+                <button class="btn mr-3" id="style1" onclick="setStandardStyle()">Estilo 1</button>
+                <button class="btn" id="style2" onclick="setHighContrastStyle()">Estilo de Alto Contraste</button>
+            </div>
+        </div>
+    </body>
+
+    <!-- Footer -->
+    <footer class="bd-footer mt-0 d-flex justify-content-center bg-body-tertiary">
+        <p class="fs-1">CILSA | Bootcamp Fullstack | Clase 5 | Demian Valentino Parenti</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</html>
